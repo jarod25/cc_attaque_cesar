@@ -11,8 +11,8 @@ def decrypt(text,step):
             result += chr((ord(char)+step-97)%26+97)
     return result
 try:
-    f=open("C:/Users/PC/Downloads/Cesar-Code-Participants/message-chiffre.txt", 'r') 
-    f1=open("C:/Users/PC/Documents/GitHub/cc_attaque_cesar/cc_attaque_cesar/message-dechiffre.txt", 'w')
+    f=open("/home/jarod/Documents/Cours/S3/Crypto/message-chiffre.txt", 'r')
+    f1=open("/home/jarod/Documents/Cours/S3/Crypto/message-dechiffre.txt", 'w')
 
     step=int(input("Entrez le nombre de décalage des lettres : "))
     text=f.read()
@@ -23,4 +23,3 @@ try:
 
 except Exception as e:
     print("Le fichier n'est pas existant.", e)
-
